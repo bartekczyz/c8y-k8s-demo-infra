@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+if (( $# != 2 ))
+then
+  echo "Usage: ./build api v190913.1"
+  exit 1
+fi
+
+PROJECT=$1
+VERSION=$2
+
+docker build \
+     -t bartekczyz/c8y-k8s-demo-${PROJECT}:${VERSION} \
+     -t bartekczyz/c8y-k8s-demo-${PROJECT}:latest \
+     -f ../../${PROJECT}/Dockerfile ../../${PROJECT}
+
+echo "Created image: ${PROJECT}@${VERSION} (+latest)"

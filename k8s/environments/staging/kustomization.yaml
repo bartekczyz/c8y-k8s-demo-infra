@@ -1,0 +1,5 @@
+patchesStrategicMerge:
+  - api-deployment.yaml
+  - env-config-map.yaml
+resources:
+  - ../../base

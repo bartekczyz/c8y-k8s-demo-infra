@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+kubectl set image deployment/api-deployment api=bartekczyz/c8y-k8s-demo-api:$1

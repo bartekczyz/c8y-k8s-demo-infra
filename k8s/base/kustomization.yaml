@@ -1,0 +1,7 @@
+resources:
+  - api-cluster-ip-service.yaml
+  - api-deployment.yaml
+  - api-ingress-service.yaml
+  - ui-cluster-ip-service.yaml
+  - ui-ingress-service.yaml
+  - ui-deployment.yaml

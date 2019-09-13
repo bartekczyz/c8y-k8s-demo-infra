@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+if (( $# != 2 ))
+then
+  echo "Usage: ./push api v190913.1"
+  exit 1
+fi
+
+PROJECT=$1
+VERSION=$2
+
+docker push bartekczyz/c8y-k8s-demo-${PROJECT}:${VERSION}
+docker push bartekczyz/c8y-k8s-demo-${PROJECT}:latest

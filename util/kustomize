@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+kustomize build ../k8s/environments/prod > ../k8s/out/prod.yaml
